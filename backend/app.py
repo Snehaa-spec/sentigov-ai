@@ -94,7 +94,7 @@ def login():
     email = data.get('email')
     password = data.get('password')
     
-    if email == 'admin@sentigov.com' and password == 'admin123':
+    if email == 'snehhaasharma7@gmail.com' and password == 'Sneha@xv34':
         return jsonify({
             "token": "sentigov-admin-token-777", 
             "role": "admin", 
