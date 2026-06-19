@@ -28,7 +28,7 @@ export default function Reports() {
     setMessage('');
     
     try {
-      const res = await axios.post('http://localhost:5000/api/upload-csv', formData, {
+      const res = await axios.post('https://sentigov-ai.onrender.com/api/upload-csv', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       setMessage(res.data.message);

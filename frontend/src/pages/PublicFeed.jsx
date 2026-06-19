@@ -11,7 +11,7 @@ export default function PublicFeed() {
   const fetchFeed = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:5000/api/public-feed');
+      const res = await axios.get('https://sentigov-ai.onrender.com/api/public-feed');
       setFeed(res.data);
       setError('');
     } catch (err) {

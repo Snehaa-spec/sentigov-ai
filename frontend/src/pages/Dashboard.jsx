@@ -31,7 +31,7 @@ export default function Dashboard() {
   const fetchStats = async () => {
     setIsRefreshing(true);
     try {
-      const res = await axios.get('http://localhost:5000/api/dashboard-stats');
+      const res = await axios.get('https://sentigov-ai.onrender.com/api/dashboard-stats');
       setStats(res.data);
     } catch (err) {
       console.error("Failed to fetch stats", err);

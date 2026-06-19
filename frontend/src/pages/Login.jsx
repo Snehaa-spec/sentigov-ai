@@ -17,7 +17,7 @@ export default function Login() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/login', { email, password });
+      const res = await axios.post('https://sentigov-ai.onrender.com/api/login', { email, password });
       localStorage.setItem('sentigov_admin_token', res.data.token);
       navigate('/dashboard');
     } catch (err) {

@@ -20,7 +20,7 @@ export default function Analyzer() {
     setError('');
     
     try {
-      const res = await axios.post('http://localhost:5000/api/analyze', { text });
+      const res = await axios.post('https://sentigov-ai.onrender.com/api/analyze', { text });
       setResult(res.data);
       setText(''); // clear input after submit
     } catch (err) {
